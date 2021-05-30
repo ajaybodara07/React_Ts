@@ -1,0 +1,64 @@
+{
+  "name": "ac-react-matui-sb",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/code-frame": "^7.5.5",
+    "@material-ui/core": "^4.4.1",
+    "@material-ui/icons": "^3.0.2",
+    "@types/classnames": "^2.2.7",
+    "@types/jest": "24.0.12",
+    "@types/node": "12.0.0",
+    "@types/react": "16.8.16",
+    "@types/react-custom-scrollbars": "^4.0.5",
+    "@types/react-dom": "16.8.4",
+    "@types/react-router-dom": "^4.3.5",
+    "@types/uuid": "^3.4.5",
+    "aws-amplify": "^1.1.28",
+    "aws-amplify-react": "^2.3.8",
+    "aws-appsync": "^1.8.0",
+    "aws-appsync-react": "^1.2.8",
+    "classnames": "^2.2.6",
+    "graphql-tag": "^2.10.1",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.5",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.0",
+    "react-sound": "^1.2.0",
+    "typescript": "3.4.5",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "^8.0.5"
+  }
+}

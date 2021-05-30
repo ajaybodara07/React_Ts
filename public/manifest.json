@@ -1,0 +1,21 @@
+{
+  "short_name": "Norpac 2019",
+  "name": "Norpac 2019",
+  "icons": [
+    {
+      "src": "nopacLogo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "nopacLogo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
