@@ -51,7 +51,6 @@ const Dashboard: React.FC<IDashboardProps> = () => {
                     position: 'absolute',
                     top: '8.5%',
                     width: '100%',
-                    // opacity: 0.4,
                     justifyContent: 'center',
                     textAlign: 'center',
                     cursor: 'pointer',

@@ -52,12 +52,10 @@ class Index extends React.Component<WithStyles<typeof styles>, State> {
       <ApolloProvider client={client}>
         <Rehydrated>
           <Dashboard />
-          {/* <Dashboard userInfo={this.userInfo()} /> */}
         </Rehydrated>
       </ApolloProvider>
     );
   }
 }
 
-// export default withAuthenticator(withRoot(withStyles(styles)(Index)));
 export default withRoot(withStyles(styles)(Index));

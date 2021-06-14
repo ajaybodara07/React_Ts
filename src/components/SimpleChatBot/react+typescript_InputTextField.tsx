@@ -38,10 +38,6 @@ const InputTextField: React.FC<IInputTextFieldProps> = ({
 }) => {
 	const [open, setOpen] = React.useState(false);
 
-	/*
-	[Param]: (data: any)
-	This function is used to pass data payload and stores the message converse session in dynamodb table 
-	*/
 	const sendMessageToBot = async (data: any) => {
 		localStorage.setItem('slugTerm', botText);
 		if (data.sendToBot || data.keyCode == 13) {
@@ -112,7 +108,6 @@ const InputTextField: React.FC<IInputTextFieldProps> = ({
 							content: JSON.stringify(e),
 							owner: 'enter-user',
 							messageConversationId: " "
-							// createdAt: Date.now()
 						}
 					}
 				});
@@ -120,7 +115,6 @@ const InputTextField: React.FC<IInputTextFieldProps> = ({
 					...dummyMessages,
 					{ createdAt: new Date(), content: "Sorry, I'm unable to answer that. Please try a different question" }
 				]);
-				// updateBotText("Sorry, I'm unable to answer that. Please try a different question");
 			}
 		} else return;
 	};
