@@ -21,11 +21,6 @@ const NorpacBottomNavigation: React.FC<INorpacBottomNavigationProps> = ({ classe
 				console.log(newValue);
 				setValue(newValue);
 				newValue === 0 ? setBottomNav('bills') : newValue === 1 ? setBottomNav('chat') : setBottomNav('help');
-				// newValue === 0
-				// 	? setBottomNav('talking_points')
-				// 	: newValue === 1
-				// 		? setBottomNav('bills')
-				// 		: newValue === 2 ? setBottomNav('chat') : setBottomNav('help');
 			}}
 			showLabels
 			className={classes.root}
