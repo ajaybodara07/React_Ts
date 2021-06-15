@@ -19,7 +19,6 @@ const NorpacBottomNavigation: React.FC<INorpacBottomNavigationProps> = ({ classe
 			value={value}
 			onChange={(event, newValue) => {
 				console.log(newValue);
-				// setBottomNav(newValue);
 				setValue(newValue);
 				newValue === 0 ? setBottomNav('bills') : newValue === 1 ? setBottomNav('chat') : setBottomNav('help');
 				// newValue === 0
@@ -31,7 +30,6 @@ const NorpacBottomNavigation: React.FC<INorpacBottomNavigationProps> = ({ classe
 			showLabels
 			className={classes.root}
 		>
-			{/* <BottomNavigationAction label="Talking Points" icon={<SpeakerNotes />} /> */}
 			<BottomNavigationAction label="Home" icon={<Description />} />
 			<BottomNavigationAction label="UN Chat" icon={<Chat />} />
 			<BottomNavigationAction label="Help" icon={<Help />} />

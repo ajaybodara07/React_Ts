@@ -30,31 +30,10 @@ const PrimaryAppBar: React.FC<IAppBarProps> = (props) => {
 	return (
 		<AppBar position="fixed" className={classNames(classes.appBar, leftDrawerOpen && classes.appBarShift)}>
 			<Toolbar disableGutters={!leftDrawerOpen} className={classes.toolbar}>
-				{/* <IconButton
-          color="inherit"
-          aria-label="Open drawer"
-          onClick={() => setLeftDrawerOpen(!leftDrawerOpen)}
-          className={classNames(classes.menuButton)}
-        >
-          <MenuIcon />
-        </IconButton> */}
 				<Avatar src="UN_logo.png" style={{ display: 'inline-block', marginLeft: '10px' }} />
 				<Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
 					UN Glossary Chat
 				</Typography>
-				{/* <IconButton
-          color="inherit"
-          aria-label="Open Chatbot"
-          onClick={() => setRightDrawerOpen(!rightDrawerOpen)}
-          className={classNames(classes.chatButton)}
-        >
-          <ChatIcon />
-        </IconButton> */}
-				{/* <IconButton color="inherit">
-                    <Badge badgeContent={4} color="secondary">
-                        <NotificationsIcon />
-                    </Badge>
-                </IconButton> */}
 			</Toolbar>
 		</AppBar>
 	);
