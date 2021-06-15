@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import createStyles from '@material-ui/core/styles/createStyles';
+import React from 'react';
 import classNames from 'classnames';
-import { Theme } from '@material-ui/core/styles/createMuiTheme';
-import withStyles from '@material-ui/core/styles/withStyles';
 import withRoot from '../../../withRoot';
 
 import AppBar from '@material-ui/core/AppBar';

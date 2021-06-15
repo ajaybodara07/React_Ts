@@ -35,8 +35,6 @@ any) => {
     // });
   }
   const convoList = data.data.getUser.userConversations.items;
-  // console.log(convoList)
-  // updateConversationsList(convoList);
   if (convoList.length == 0) {
     // setConvoListAction("Ha! I couldn't find anything");
 
@@ -99,7 +97,6 @@ const RandomUserIdWrapper: React.FC<IRandomUserIdWrapperProps> = ({
     if (localStorage.getItem('Aws') === null) {
       getRandomUserUuid(client, updateRandUserIdAws);
     } else {
-      console.log(localStorage.getItem('randUserIdAws'));
       updateRandUserIdAws(localStorage.getItem('randUserIdAws'));
 
       populateConversationList({
