@@ -2,7 +2,6 @@ import React from 'react';
 import { TextField } from '@material-ui/core';
 import invokeBot from '../../../graphql/AI/invokeBot';
 import { createMessage } from '../../../graphql/mutations';
-// import uuid from 'uuid/v4';
 
 interface IInputTextFieldProps {
 	botText: string;
@@ -36,7 +35,6 @@ const InputTextField: React.FC<IInputTextFieldProps> = ({
 					createdAt: 'sending...'
 				}
 			]);
-			console.log(activeConversation);
 			const userMutation = client.mutate({
 				mutation: createMessage,
 				variables: {
@@ -63,18 +61,15 @@ const InputTextField: React.FC<IInputTextFieldProps> = ({
 				mutation: createMessage,
 				variables: {
 					input: {
-						// id: uuid(),
 						content: JSON.parse(response.data.invokeBot.response),
 						owner: authorId,
 						chatbot: true,
 						isSent: true,
 						messageConversationId: activeConversation.conversation.id
-						// createdAt: Date.now()
 					}
 				}
 			});
 			const mutationResponse = await Promise.all([ userMutation, botMutation ]);
-			console.log(mutationResponse);
 			updateMessages([
 				...dummyMessages,
 				mutationResponse[0].data.createMessage,

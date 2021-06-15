@@ -153,8 +153,6 @@ const ChatTagActions: React.FC<IChatTagActions> = ({ open, chatClose, saveChatTa
 						valueLabelDisplay="on"
 						step={null}
 						marks={marks}
-						// min={10}
-						// max={100}
 						onChange={handleChange1}
 					/>
 					<div className={classes.margin} />
@@ -169,8 +167,6 @@ const ChatTagActions: React.FC<IChatTagActions> = ({ open, chatClose, saveChatTa
 						valueLabelDisplay="on"
 						step={null}
 						marks={marks}
-						// min={10}
-						// max={100}
 						onChange={handleChange2}
 					/>
 					<div className={classes.margin} />
@@ -185,8 +181,6 @@ const ChatTagActions: React.FC<IChatTagActions> = ({ open, chatClose, saveChatTa
 						valueLabelDisplay="on"
 						step={null}
 						marks={marks}
-						// min={10}
-						// max={100}
 						onChange={handleChange3}
 					/>
 				</DialogContent>
